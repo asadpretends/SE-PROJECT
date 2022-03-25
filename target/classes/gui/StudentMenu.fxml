@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StudentMenu">
+   <children>
+      <Button fx:id="Login" layoutX="54.0" layoutY="51.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+      <Button fx:id="Register" layoutX="176.0" layoutY="51.0" mnemonicParsing="false" onAction="#Register" text="Register" />
+      <Button fx:id="JoinClass" layoutX="48.0" layoutY="111.0" mnemonicParsing="false" onAction="#JoinClass" text="Join Class" />
+      <Button fx:id="Announcements" layoutX="163.0" layoutY="111.0" mnemonicParsing="false" onAction="#Announcements" text="Announcements" />
+      <Button fx:id="ExitClassroom" layoutX="46.0" layoutY="171.0" mnemonicParsing="false" onAction="#ExitClassroom" text="Exit Classroom" />
+      <Button fx:id="Material" layoutX="162.0" layoutY="171.0" mnemonicParsing="false" onAction="#Material" text="Uploaded Material" />
+      <Button fx:id="Attendance" layoutX="43.0" layoutY="226.0" mnemonicParsing="false" onAction="#Attendance" text="Attendance" />
+      <Button fx:id="Profile" layoutX="184.0" layoutY="226.0" mnemonicParsing="false" onAction="#Profile" text="Profile" />
+      <Button fx:id="Logout" layoutX="55.0" layoutY="280.0" mnemonicParsing="false" onAction="#Logout" text="Logout" />
+      <Button fx:id="Exit" layoutX="189.0" layoutY="280.0" mnemonicParsing="false" onAction="#Exit" text="Exit" />
+      <Label layoutX="20.0" layoutY="55.0" text="1" />
+      <Label layoutX="20.0" layoutY="115.0" text="3" />
+      <Label layoutX="20.0" layoutY="175.0" text="5" />
+      <Label layoutX="20.0" layoutY="230.0" text="7" />
+      <Label layoutX="20.0" layoutY="284.0" text="9" />
+      <Label layoutX="150.0" layoutY="55.0" text="2" />
+      <Label layoutX="150.0" layoutY="115.0" text="4" />
+      <Label layoutX="150.0" layoutY="175.0" text="6" />
+      <Label layoutX="150.0" layoutY="230.0" text="8" />
+      <Label layoutX="151.0" layoutY="284.0" text="10" />
+      <Label layoutX="114.0" layoutY="14.0" text="Student " textFill="#750e0e">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

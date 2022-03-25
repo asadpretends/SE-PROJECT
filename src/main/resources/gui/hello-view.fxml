@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <children>
+      <ImageView fx:id="ClassroomFront" fitHeight="328.0" fitWidth="567.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6e38a5ea916137f9595451424d1fff48.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Student" layoutX="239.0" layoutY="131.0" mnemonicParsing="false" onAction="#StudentMenu" prefHeight="25.0" prefWidth="90.0" text="Student" />
+      <Button fx:id="Exit" layoutX="239.0" layoutY="204.0" mnemonicParsing="false" onAction="#Exittheprogram" prefHeight="25.0" prefWidth="90.0" text="Exit" />
+      <Button fx:id="Teacher" layoutX="239.0" layoutY="54.0" mnemonicParsing="false" onAction="#TeacherMenu" prefHeight="25.0" prefWidth="90.0" text="Teacher" />
+   </children>
+</AnchorPane>
