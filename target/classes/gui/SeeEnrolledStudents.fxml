@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="319.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SeeEnrolledStudents">
+    <children>
+        <ImageView fitHeight="366.0" fitWidth="492.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@6ab9d666baf195758a42c4717feea51f.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="177.0" layoutY="14.0" text="Enrolled Students" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+      <Button fx:id="output" layoutX="39.0" layoutY="50.0" mnemonicParsing="false" onAction="#button" prefHeight="25.0" prefWidth="129.0" text="Classroom Code">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Back" layoutX="410.0" layoutY="289.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="51.0" text="Back" />
+      <TextField fx:id="ClassroomCode" layoutX="304.0" layoutY="50.0" />
+      <ListView fx:id="table" layoutX="136.0" layoutY="89.0" prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>
