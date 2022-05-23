@@ -1,96 +1,137 @@
 package gui;
 
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.image.ImageView;
 
 import java.io.IOException;
 
-public class StudentMenu
-{
-    @FXML
-    private Button Login;
-
-    @FXML
-    private Button Register;
-
-    @FXML
-    private Button JoinClass;
-
-    @FXML
-    private Button Announcements;
-
-    @FXML
-    private Button ExitClassroom;
-
-    @FXML
-    private Button Material;
-
-    @FXML
-    private Button Attendance;
-
-    @FXML
-    private Button Profile;
-
-    @FXML
-    private Button Logout;
+public class StudentMenu {
 
     @FXML
     private Button Exit;
 
     @FXML
-    public void Login() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("StudentLogin.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 363, 360);
-        Main.s.setTitle("LogIn Menu");
+    private Button JoinClassroom;
+
+    @FXML
+    private Button LeaveClassroom;
+
+    @FXML
+    private Button Login;
+
+    @FXML
+    private Button Logout;
+
+    @FXML
+    private Button Register;
+
+    @FXML
+    private Button SeeAnnouncements;
+
+    @FXML
+    private Button SeeAttendance;
+
+    @FXML
+    private Button SeeProfile;
+
+    @FXML
+    private ImageView TeacherDep;
+
+    @FXML
+    private Button UploadMaterial;
+
+    @FXML
+    void Exit(ActionEvent event) {
+
+    }
+
+    @FXML
+    public void JoinClassroom(Event e) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("StudentJoinClass.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        System.out.println("hello");
+        Main.s.setTitle("Create Classroom Menu");
+        Main.s.setScene(scene);
+        Main.s.show();
+
+    }
+
+    @FXML
+    void LeaveClassroom(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("LeaveClassroom.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        Main.s.setTitle("Leave Classroom");
         Main.s.setScene(scene);
         Main.s.show();
     }
+
+
+    @FXML
+    public void Login(Event e) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("StudentLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        Main.s.setTitle("Login Menu");
+        Main.s.setScene(scene);
+        Main.s.show();
+    }
+
+    @FXML
+    void Logout(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Student Logged Out");
+        alert.setHeaderText("Student has logged out successfully.");
+
+
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            //   Controller.BL.teachers.RegisterTeacher(Name.getText(), Password.getText(), Email.getText(), CNIC.getText());
+            Main.s.setWidth(565);
+            Main.s.setHeight(312);
+            Main.s.setScene(Main.scene);
+        }
+    }
+
     @FXML
     public void Register(Event e) throws IOException {
-
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("StudentRegister.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 363, 360);
-            Main.s.setTitle("Register Menu");
-            Main.s.setScene(scene);
-            Main.s.show();
-        }
-    @FXML
-    public void JoinClass(Event e) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("StudentJoinClass.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 426, 114);
-        Main.s.setTitle("Join Class Menu");
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("StudentRegister.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        Main.s.setTitle("Register Menu");
         Main.s.setScene(scene);
         Main.s.show();
     }
+
     @FXML
-    public void Announcements(Event e){
+    void SeeAnnouncements(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("SeeAnnouncements.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        Main.s.setTitle("Announcements");
+        Main.s.setScene(scene);
+        Main.s.show();
+    }
+
+    @FXML
+    void SeeAttendance(ActionEvent event) {
 
     }
+
     @FXML
-    public void ExitClassroom(Event e){
+    void SeeProfile(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("DisplayStudent.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        Main.s.setTitle("Announcements");
+        Main.s.setScene(scene);
+        Main.s.show();
+    }
+
+    @FXML
+    void UploadMaterial(ActionEvent event) {
 
     }
-    @FXML
-    public void Material(Event e){
 
-    }
-    @FXML
-    public void Attendance(Event e){
-
-    }
-    @FXML
-    public void Profile(Event e){
-
-    }
-    @FXML
-    public void Logout(Event e){
-
-    }
-    @FXML
-    public void Exit(Event e){
-
-    }
 }

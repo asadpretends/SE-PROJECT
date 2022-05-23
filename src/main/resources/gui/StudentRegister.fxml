@@ -4,49 +4,56 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="360.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StudentRegister">
+<AnchorPane prefHeight="312.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StudentRegister">
    <children>
-      <Label layoutX="49.0" layoutY="26.0" text="Please Register Yourself Below" textFill="#295126">
-         <font>
-            <Font name="Times New Roman Bold" size="21.0" />
-         </font>
-      </Label>
-      <TextField fx:id="Email" layoutX="149.0" layoutY="96.0" />
-      <TextField fx:id="Name" layoutX="149.0" layoutY="150.0" />
-      <TextField fx:id="Program" layoutX="149.0" layoutY="255.0" />
-      <PasswordField fx:id="Password" layoutX="149.0" layoutY="205.0" />
-      <Label layoutX="23.0" layoutY="98.0" text="Email:">
+      <ImageView fitHeight="439.0" fitWidth="620.0" layoutX="-14.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6ab9d666baf195758a42c4717feea51f.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="115.0" layoutY="82.0" text="Name:" textFill="#fff8f8">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="27.0" layoutY="153.0" text="Name:">
+      <Label layoutX="104.0" layoutY="125.0" text="Program:" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="207.0" text="Password:">
+      <Label layoutX="101.0" layoutY="172.0" text="Password:" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="15.0" layoutY="257.0" text="Program:">
+      <TextField fx:id="Name" layoutX="215.0" layoutY="80.0" />
+      <TextField fx:id="Program" layoutX="215.0" layoutY="122.0" />
+      <TextField fx:id="Email" layoutX="215.0" layoutY="218.0" />
+      <PasswordField fx:id="Password" layoutX="215.0" layoutY="170.0" />
+      <Button fx:id="Submit" layoutX="105.0" layoutY="274.0" mnemonicParsing="false" onAction="#Submit" text="Submit">
          <font>
-            <Font name="Times New Roman Bold" size="18.0" />
-         </font>
-      </Label>
-      <Button fx:id="Submit" layoutX="39.0" layoutY="305.0" mnemonicParsing="false" onAction="#Submit" prefHeight="20.0" prefWidth="72.0" text="Submit">
-         <font>
-            <Font name="Times New Roman Bold" size="16.0" />
+            <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="226.0" layoutY="303.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="72.0" text="Back" onAction="#Back">
+      <Button fx:id="Back" layoutX="307.0" layoutY="274.0" mnemonicParsing="false" onAction="#Back" text="Back">
          <font>
-            <Font name="Times New Roman Bold" size="16.0" />
+            <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Button>
+      <Label layoutX="115.0" layoutY="221.0" text="Email:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="28.0" text="Student's Register Menu" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

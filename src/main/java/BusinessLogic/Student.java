@@ -1,6 +1,5 @@
 package BusinessLogic;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,5 +53,17 @@ public class Student
             System.out.print(joinedclasses.get(i));
         }
         System.out.println("\n");
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getProgram() {
+        return Program;
     }
 }

@@ -28,11 +28,13 @@ public class Controller
     private Button Exit;
 
     public static Scene studentmenu;
+    public static Scene teachermenu;
+
 
     @FXML
     public void StudentMenu(Event e) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("StudentMenu.fxml"));
-        studentmenu = new Scene(fxmlLoader.load(), 300, 350);
+        studentmenu = new Scene(fxmlLoader.load(), 565, 312);
         Main.s.setTitle("Student Menu");
         Main.s.setScene(studentmenu);
         Main.s.show();
@@ -41,9 +43,9 @@ public class Controller
     @FXML
     public void TeacherMenu(Event e) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("TeacherMenu.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        teachermenu = new Scene(fxmlLoader.load(), 565, 312);
         Main.s.setTitle("Teacher Menu");
-        Main.s.setScene(scene);
+        Main.s.setScene(teachermenu);
         Main.s.show();
     }
     @FXML

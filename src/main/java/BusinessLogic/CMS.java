@@ -112,8 +112,7 @@ public class CMS
                 String classroomcode = input.nextLine();
                 System.out.println("Enter text: ");
                 String text = input.nextLine();
-               // classrooms.PostAnnouncement(classroomcode,text,teachers.GetloggedInTeacher().name);
-
+                classrooms.PostAnnouncement(classroomcode,text,teachers.GetloggedInTeacher().name);
             }
             else if (choice == 7)
             {
@@ -125,13 +124,13 @@ public class CMS
                 String fname = input.nextLine();
                 System.out.println("Enter Filetype: ");
                 String ft = input.nextLine();
-             //   classrooms.uploadmaterial(classroomcode,path,fname,ft,teachers.GetloggedInTeacher().name);
+                classrooms.uploadmaterial(classroomcode,path,fname,ft,teachers.GetloggedInTeacher().name);
             }
             else if (choice == 8)
             {
                 System.out.print("Enter classroomcode: ");
                 String gc = input.nextLine();
-             //   classrooms.TakeAttendance(gc);
+                classrooms.TakeAttendance(gc);
             }
             else if (choice == 9)
             {
@@ -210,7 +209,7 @@ public class CMS
             {
                 System.out.print("Enter classroom code: ");
                 String code = input.nextLine();
-              //  classrooms.SeeAnnoucements(code);
+                classrooms.SeeAnnoucements(code);
             }
             else if (choice == 5) {
                 System.out.println("Enter classroom code: ");
@@ -220,11 +219,11 @@ public class CMS
             } else if (choice == 6) {
                 System.out.print("Enter classroom code: ");
                 String code = input.nextLine();
-           //     classrooms.SeeUploadedMaterial(code);
+                classrooms.SeeUploadedMaterial(code);
             } else if (choice == 7) {
                 System.out.println("Enter classroom code: ");
                 String gc = input.nextLine();
-            //    classrooms.Displayattendance(gc,students.GetloggedInStudent().email);
+                classrooms.Displayattendance(gc,students.GetloggedInStudent().email);
             } else if (choice == 8) {
                 students.Display();
             } else if (choice == 9) {

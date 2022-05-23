@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="319.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DisplayProfile">
+    <children>
+        <ImageView fitHeight="328.0" fitWidth="567.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@6ab9d666baf195758a42c4717feea51f.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="177.0" layoutY="29.0" text="Logged In Teacher" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="TextArea" layoutX="78.0" layoutY="111.0" prefHeight="154.0" prefWidth="345.0" />
+        <Button fx:id="output" layoutX="182.0" layoutY="65.0" mnemonicParsing="false" onAction="#button" prefHeight="25.0" prefWidth="129.0" text="Enrolled Students">
+            <font>
+                <Font name="Times New Roman Bold" size="13.0" />
+            </font>
+        </Button>
+      <Button fx:id="Back" layoutX="387.0" layoutY="289.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="72.0" text="Back" />
+    </children>
+</AnchorPane>

@@ -11,12 +11,13 @@ public class Main extends Application {
 
 
     public static Stage s;
+    public static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
         s= stage;
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        scene = new Scene(fxmlLoader.load(), 565, 312);
         s.setTitle("Classroom Management System");
        // s.setResizable(false);
        // s.setFullScreen(true);

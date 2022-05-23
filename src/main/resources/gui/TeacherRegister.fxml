@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="312.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StudentRegister">
+<AnchorPane prefHeight="312.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TeacherRegister">
    <children>
       <ImageView fitHeight="439.0" fitWidth="620.0" layoutX="-14.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,7 +21,7 @@
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="104.0" layoutY="125.0" text="Program:" textFill="WHITE">
+      <Label layoutX="115.0" layoutY="124.0" text="CNIC:" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
@@ -32,7 +32,7 @@
          </font>
       </Label>
       <TextField fx:id="Name" layoutX="215.0" layoutY="80.0" />
-      <TextField fx:id="Program" layoutX="215.0" layoutY="122.0" />
+      <TextField fx:id="CNIC" layoutX="215.0" layoutY="122.0" />
       <TextField fx:id="Email" layoutX="215.0" layoutY="218.0" />
       <PasswordField fx:id="Password" layoutX="215.0" layoutY="170.0" />
       <Button fx:id="Submit" layoutX="105.0" layoutY="274.0" mnemonicParsing="false" onAction="#Submit" text="Submit">
@@ -40,7 +40,7 @@
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="Back" layoutX="307.0" layoutY="274.0" mnemonicParsing="false" onAction="#Back" text="Back">
+      <Button fx:id="Back" layoutX="307.0" layoutY="274.0" mnemonicParsing="false" text="Back" onAction="#Back">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
@@ -50,7 +50,7 @@
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="190.0" layoutY="28.0" text="Student's Register Menu" textFill="WHITE">
+      <Label layoutX="144.0" layoutY="31.0" text="Teacher Register Menu" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="20.0" />
          </font>

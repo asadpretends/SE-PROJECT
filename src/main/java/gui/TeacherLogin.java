@@ -3,9 +3,10 @@ package gui;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class StudentJoinClass {
+public class TeacherLogin {
 
     @FXML
     private Button Back;
@@ -14,23 +15,25 @@ public class StudentJoinClass {
     private Button Submit;
 
     @FXML
-    private TextField ClassroomCode;
+    private TextField Email;
+
+    @FXML
+    private PasswordField Password;
+
 
     @FXML
     void Back(ActionEvent event) {
-        Main.s.setWidth(310);
-        Main.s.setHeight(390);
-        Main.s.setScene(Controller.studentmenu);
+        Main.s.setWidth(565);
+        Main.s.setHeight(312);
+        Main.s.setScene(Controller.teachermenu);
     }
 
     @FXML
     void Submit(ActionEvent event) {
-        Controller.BL.classrooms.Enrollstudent(ClassroomCode.getText(), Controller.BL.students.GetloggedInStudent());
+        Controller.BL.teachers.LoginIn(Email.getText(),Password.getText());
         Main.s.setWidth(565);
         Main.s.setHeight(312);
-        Main.s.setScene(Controller.studentmenu);
+        Main.s.setScene(Controller.teachermenu);
     }
 
 }
-
-

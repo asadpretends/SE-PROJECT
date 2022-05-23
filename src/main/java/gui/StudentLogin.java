@@ -1,15 +1,10 @@
-/*package gui;
+package gui;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class StudentLogin {
-
-    @FXML
-    private Button Submit;
 
     @FXML
     private Button Back;
@@ -21,16 +16,26 @@ public class StudentLogin {
     private PasswordField Password;
 
     @FXML
-    public void Submit(ActionEvent e)
-    {
-    HelloController.BL.students.LoginIn(Email.getText(),Password.getText());
+    private Button Submit;
+
+    @FXML
+    void Back(ActionEvent event) {
+        Main.s.setWidth(565);
+        Main.s.setHeight(312);
+        Main.s.setScene(Controller.studentmenu);
     }
 
     @FXML
-    public void Back(ActionEvent e)
-    {
-        HelloApplication.s.setWidth(310);
-        HelloApplication.s.setHeight(390);
-        HelloApplication.s.setScene(HelloController.studentmenu);
+    void Submit(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Student Registered");
+        alert.setHeaderText("Student has been registered successfully.");
+
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            Controller.BL.students.LoginIn(Email.getText(), Password.getText());
+            Main.s.setWidth(565);
+            Main.s.setHeight(312);
+            Main.s.setScene(Controller.studentmenu);
+        }
     }
-}*/
+}

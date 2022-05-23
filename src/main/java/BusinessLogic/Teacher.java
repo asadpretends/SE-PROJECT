@@ -1,8 +1,6 @@
 package BusinessLogic;
 
 
-import javax.persistence.*;
-
 public class Teacher
 {
     String name;
