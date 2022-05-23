@@ -48,8 +48,12 @@ public class StudentMenu {
     private Button UploadMaterial;
 
     @FXML
-    void Exit(ActionEvent event) {
-
+    void Exit(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        Main.s.setTitle("Display Profile");
+        Main.s.setScene(scene);
+        Main.s.show();
     }
 
     @FXML
@@ -130,8 +134,12 @@ public class StudentMenu {
     }
 
     @FXML
-    void UploadMaterial(ActionEvent event) {
-
+    void UploadMaterial(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("SeeUploadMaterial.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 565, 312);
+        Main.s.setTitle("Announcements");
+        Main.s.setScene(scene);
+        Main.s.show();
     }
 
 }

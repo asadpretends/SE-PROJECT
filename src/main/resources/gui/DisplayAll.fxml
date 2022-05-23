@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="319.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DisplayAll">
+<AnchorPane prefHeight="328.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DisplayAll">
     <children>
         <ImageView fitHeight="328.0" fitWidth="567.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -21,12 +21,13 @@
                 <Font name="Times New Roman Bold" size="18.0" />
             </font>
         </Label>
-        <TextArea fx:id="TextArea" layoutX="39.0" layoutY="114.0" prefHeight="200.0" prefWidth="415.0" />
+        <TextArea fx:id="TextArea" layoutX="39.0" layoutY="114.0" prefHeight="152.0" prefWidth="415.0" />
         <Button fx:id="output" layoutX="39.0" layoutY="67.0" mnemonicParsing="false" onAction="#button" prefHeight="25.0" prefWidth="129.0" text="Instructor Name">
             <font>
                 <Font name="Times New Roman Bold" size="13.0" />
             </font>
         </Button>
       <TextField fx:id="instructor" layoutX="305.0" layoutY="67.0" />
+      <Button fx:id="Back" layoutX="367.0" layoutY="283.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="87.0" text="Back" />
     </children>
 </AnchorPane>

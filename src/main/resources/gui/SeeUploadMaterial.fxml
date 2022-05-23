@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="319.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SeeUploadMaterial">
+    <children>
+        <ImageView fitHeight="328.0" fitWidth="567.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@6ab9d666baf195758a42c4717feea51f.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="41.0" layoutY="99.0" text="Classroom Code:" textFill="#fffbfb">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="70.0" layoutY="142.0" text="File Path:" textFill="#fcfcfc">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="Submit" layoutX="81.0" layoutY="289.0" mnemonicParsing="false" onAction="#Submit" text="Submit" />
+        <Button fx:id="Back" layoutX="300.0" layoutY="289.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+        <TextField fx:id="ClassroomCode" layoutX="246.0" layoutY="96.0" />
+        <Label layoutX="182.0" layoutY="34.0" text="Upload Material" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="FilePath" layoutX="246.0" layoutY="140.0" />
+        <Label layoutX="65.0" layoutY="190.0" text="File Name:" textFill="#fcfcfc">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="68.0" layoutY="234.0" text="File Type:" textFill="#fcfcfc">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="FileName" layoutX="246.0" layoutY="187.0" />
+        <TextField fx:id="FileType" layoutX="246.0" layoutY="231.0" />
+    </children>
+</AnchorPane>

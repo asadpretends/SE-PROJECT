@@ -15,16 +15,17 @@
                 <Image url="@6ab9d666baf195758a42c4717feea51f.jpg" />
             </image>
         </ImageView>
-        <Label layoutX="177.0" layoutY="29.0" text="Logged In Teacher" textFill="WHITE">
+        <Label layoutX="177.0" layoutY="29.0" text="Logged In Student" textFill="WHITE">
             <font>
                 <Font name="Times New Roman Bold" size="18.0" />
             </font>
         </Label>
-        <TextArea fx:id="TextArea" layoutX="39.0" layoutY="114.0" prefHeight="200.0" prefWidth="415.0" />
+        <TextArea fx:id="TextArea" layoutX="39.0" layoutY="114.0" prefHeight="154.0" prefWidth="415.0" />
         <Button fx:id="output" layoutX="182.0" layoutY="65.0" mnemonicParsing="false" onAction="#button" prefHeight="25.0" prefWidth="129.0" text="Enrolled Students">
             <font>
                 <Font name="Times New Roman Bold" size="13.0" />
             </font>
         </Button>
+      <Button fx:id="Back" layoutX="373.0" layoutY="289.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="81.0" text="Back" />
     </children>
 </AnchorPane>

@@ -24,7 +24,7 @@ public class ClassroomPicker
         return null;
     }
 
-    public void SeeUploadedMaterial(String gc)
+    public List<UploadMaterial> SeeUploadedMaterial(String gc)
     {
         boolean flag = false;
         for (int i=0;i<classrooms.size();i++)
@@ -37,6 +37,7 @@ public class ClassroomPicker
         }
         if(flag == true)
             System.out.println("Invalid code");
+        return null;
     }
     public void SeeAnnoucements(String gc)
     {
